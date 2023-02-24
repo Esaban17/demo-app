@@ -1,0 +1,19 @@
+{
+    "name": "spectre/portal",
+    "type": "project",
+    "require": {
+        "firebase/php-jwt": "^6.4"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Spectre\\Portal\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Esaban17",
+            "email": "estuardo1314@gmail.com"
+        }
+    ]
+}
