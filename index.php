@@ -132,12 +132,16 @@
                 //setCookie("url", data.url, 1);
                 setCookie("alertShow", true, 1);
 
+
+                window.location.href = "home.php";
+                
+                /*
                 var iframe = document.getElementById("miIframe");
                 iframe.src = data.url;
                 setTimeout(function () {
                     window.location.href = "https://gruporamle.com/portal/home.php";
                 }, 3000); //redireccionar después de 4 segundos
-
+                */
             })
             .catch(error => console.log(error));      
         } catch(error) {

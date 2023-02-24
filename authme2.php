@@ -4,8 +4,8 @@
 	
 	error_log(print_r($data,true));
 
-	$secret = 'uZNTgf3Osk2yXWbhhpSMuUsAPHKTCQU398Xk5lfC';  // WLAN API Key, obtained from the Mist Web GUI after creating the WLAN
-	//$secret = 'test-secret';
+	//$secret = 'uZNTgf3Osk2yXWbhhpSMuUsAPHKTCQU398Xk5lfC';  // WLAN API Key, obtained from the Mist Web GUI after creating the WLAN
+	$secret = 'test-secret';
 	$wlan_id = $data['wlan_id'];
 	$ap_mac = $data['ap_mac'];
 	$client_mac = $data['client_mac'];
@@ -44,9 +44,9 @@
 
 	$signature = urlencode(base64_encode(hash_hmac('sha1', $payload, $secret, true)));
 
-	$final_url = sprintf('https://portal.mist.com/authorize?signature=%s&%s', $signature, $payload);
+	//$final_url = sprintf('https://portal.mist.com/authorize?signature=%s&%s', $signature, $payload);
 
-	//$final_url = sprintf('https://portal.mist.com/authorize-test?signature=%s&%s', $signature, $payload);
+	$final_url = sprintf('https://portal.mist.com/authorize-test?signature=%s&%s', $signature, $payload);
 
 	//Debug code used for testing purposes only
 	//If set to true, display the variable details without authorizing the guest in the Mist cloud
