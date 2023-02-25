@@ -1,15 +1,24 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+    background-color: #f4f4f4;
+}
 .container {
-    width: 100%;
-    height: 100%;
+    display: flex;
+    height: calc(100vh - 3px);
+    flex-direction: column;
 }
 
 .image-container {
-    background-image: url('../images/desktop.png');
-    background-size: 100% 96%;
-    position: fixed;
+    background-image: url(../images/desktop.png);
+    background-size: 100% 100%;
+    position: relative;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
+    height: 96%;
     top: 0;
     left: 0;
 }
@@ -73,6 +82,8 @@
 }
 
 .card-button {
+    cursor: pointer;
+    border: 1px solid #2C2A29;
     font-family: sans-serif;
     font-weight: 700;
     background-color: transparent;
@@ -89,10 +100,13 @@
 }
 
 .nav-button {
-    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding: 7px 32px;
     background: #FDDA24;
     color: #2C2A29;
-    padding: 7px 24px;
     margin: 8px 0;
     border: none;
     border-radius: 100px;
@@ -103,6 +117,7 @@
     letter-spacing: -0.375px;
     line-height: 24px;
     font-weight: 700;
+    box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 10%);
 }
 
 .confirm-button {
@@ -160,7 +175,7 @@ h4 {
 }
 
 hr {
-    position: absolute;
+    margin: 0px;
     right: 5px;
     bottom: 25px;
     width: 100%;
@@ -169,28 +184,26 @@ hr {
 .footer-container {
     margin: 0;
     padding: 0;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
-    height: 4%;
+    height: 7%;
     text-align: right;
     background-color: #f4f4f4
 }
 
 .privacy-link {
+    margin-top: 0.8rem;
+    font-family: 'Open Sans Normal';
     font-size: 14px;
+    float: right;
     color: #2C2A29;
-    position: relative;
-
-    display: inline-block;
-    padding: 10px;
-    color: #333;
-    text-decoration: underline;
     margin-right: 10%;
+    letter-spacing: -0.2px;
 }
 
 .swal2-styled.swal2-confirm {
-    font-family: sans-serif !important;
+    font-family: 'Open Sans Normal' !important;
     font-style: normal !important;
     font-weight: 700 !important;
     font-size: 14px !important;
@@ -199,11 +212,14 @@ hr {
     color: #2C2A29 !important;
     border-radius: 1.25em !important;
     width: 190px;
+    box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 10%);
 }
+
 
 .swal2-title {
     font-size: 1.375em !important;
     font-family: sans-serif !important;
+    color: #000 !important;
 }
 
 .swal2-icon.swal2-success {
@@ -313,6 +329,14 @@ hr {
 
 .swal2-html-container {
     margin: 0.5em 1.6em 0.3em !important;
+    font-family: 'Open Sans Normal' !important;
+    color: #000 !important;
+    font-size: 14px !important;
+}
+.swal2-close{
+    color: #000 !important;
+    font-family: system-ui !important;
+    font-weight: lighter !important;
 }
 
 /*DESKTOP*/
@@ -336,7 +360,7 @@ hr {
     }
 
     .card-container {
-        width: 55%;
+        width: 70%;
         margin: 15px auto;
         display: flex;
         justify-content: center;
@@ -407,158 +431,15 @@ hr {
     }
 
     .nav-button {
-        width: 21%;
         font-size: 15px;
     }
 }
-
-@media only screen and (width: 1024px) and (height: 768px) {
-    /* Estilos para una resolución de 1024 x 768 píxeles */
+@media only screen and (min-width: 1440px)  {
     .card-container {
-        width: 62%;
-    }
-
-    .welcome-container {
-        margin-top: 7%;
-    }
-
-    .nav-button {
-        width: 23%;
-        font-size: 15px;
-        margin-top: 15px;
+        width: 60%;
     }
 }
 
-@media only screen and (width: 1366px) and (height: 768px) {
-    /* Estilos para una resolución de 1366 x 768 píxeles */
-    
-    .welcome-container {
-        margin-top: 4%;
-    }
-}
-
-@media only screen and (width: 1440px) and (height: 900px) {
-    /* Estilos para una resolución de 1440 x 900 píxeles */
-    .top-container {
-        align-items: center;
-        text-align: center;
-        margin-left: 5%;
-    }
-
-    .welcome-container {
-        margin-left: 25%;
-    }
-
-    .center-container {
-        margin-left: 25%;
-    }
-
-    .card-container {
-        width: 54%;
-        margin: 5px auto;
-        margin-left: 25%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 15px;
-        background-color: white;
-    }
-
-    .button-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 7%;
-    }
-}
-
-@media only screen and (width: 1920px) and (height: 1080px) {
-
-    .top-container { 
-        margin-left: 5%;
-    }
-
-    .logo {
-        margin-top: 5%;
-        width: 180px;
-    }
-
-    .title {
-        font-family: sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 26px;
-    }
-
-    /* Estilos para una resolución de 1920 x 1080 píxeles */
-    .center-container {
-        margin: 0 auto;
-        position: relative;
-        width: 63%;
-        margin-top: 1%;
-        margin-left: 28%;
-    }
-
-    .welcome-container {
-        width: 63%;
-        margin-top: 6%;
-        margin-left: 28%;
-    }
-
-    .button-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 8%;
-    }
-
-    .card-container {
-        width: 50%;
-        margin: 5px auto;
-        margin-left: 28%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 15px;
-        background-color: white;
-    }
-
-    .nav-button { 
-        font-size: 20px;
-        margin: 25px 0;
-    }
-
-    .footer-container {
-        margin: 0;
-        padding: 0;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        height: 5%;
-        text-align: right;
-        background-color: #f4f4f4;
-    }
-
-    hr {
-        position: absolute;
-        right: 5px;
-        bottom: 50px;
-        width: 100%;
-    }
-
-    .privacy-link {
-        font-size: 20px;
-        color: #2C2A29;
-        position: relative;
-        display: inline-block;
-        padding: 10px;
-        color: #333;
-        text-decoration: underline;
-        margin-right: 10%;
-    }
-
-}
 
 /*MOVIL*/
 
@@ -590,10 +471,10 @@ hr {
     .image-container {
         background-image: url('../images/tablet.png');
         background-size: 100% 100%;
-        position: fixed;
+        position: relative;
         background-repeat: no-repeat;
         width: 100%;
-        height: 100%;
+        height: 96%;
         top: 0;
         left: 0;
     }
@@ -686,10 +567,10 @@ hr {
         left: 0;
         margin: 0;
         padding: 0;
-        position: fixed;
+        position: relative;
         bottom: 0;
         width: 100%;
-        height: 5%;
+        height: 7%;
         text-align: center;
     }
 
@@ -759,10 +640,10 @@ hr {
     .image-container {
         background-image: url('../images/tablet.png');
         background-size: 100% 100%;
-        position: fixed;
+        position: relative;
         background-repeat: no-repeat;
         width: 100%;
-        height: 100%;
+        height: 96%;
         top: 0;
         left: 0;
     }
@@ -813,7 +694,7 @@ hr {
 
     .footer-container {
         text-align: center;
-        height: 6%;
+        height: 7%;
     }
 
     .privacy-link {
@@ -825,309 +706,3 @@ hr {
 
 }
 
-@media only screen and (max-width: 576px) {
-
-    .logo {
-        margin-top: 0;
-        width: 140px;
-        height: auto;
-    }
-
-    .top-container {
-        margin-top: 5%;
-    }
-
-    .welcome-container {
-        margin-top: 0;
-        margin-left: 15%;
-        width: 100%;
-    }
-
-    .center-container {
-        margin-top: 0;
-        padding: 0;
-        margin-left: 10%;
-        width: 100%;
-    }
-
-    .card img {
-        height: 85px;
-    }
-
-    .card-container {
-        margin-top: 0;
-        margin-left: 85px;
-        padding: 0;
-        background-color: transparent;
-    }
-
-    .card {
-        width: 47%;
-        margin: 5px 5px;
-    }
-
-    @media (max-width: 500px) {
-        .card-container {
-            width: 95%;
-            margin: 0 auto;
-        }
-
-        Copy code .card {
-            width: 20%;
-            /* Aumentar el ancho de cada card */
-            text-align: center;
-            margin: 0 10px;
-            /* Espacio entre cada card */
-        }
-    }
-
-    .card-button {
-        font-size: 7px;
-        font-weight: 900;
-    }
-
-    .card h3 {
-        font-size: 11px;
-    }
-
-    .card-description {
-        padding: 8px;
-        height: 75px;
-        width: 92%;
-    }
-
-    .title {
-        margin-top: 10px;
-        font-size: 20px;
-    }
-
-    h1 {
-        font-size: 25px;
-        margin-bottom: 0;
-    }
-
-    h4 {
-        font-size: 16px;
-        margin-bottom: 0px;
-    }
-
-    .image-container {
-        background-image: url('../images/mobile.png');
-    }
-
-    .button-container {
-        margin-top: 0;
-    }
-
-    .nav-button {
-        width: 60%;
-        line-height: 10px;
-        font-size: 13px;
-        margin-top: 5px;
-    }
-
-    .icon {
-        width: 18px;
-        height: 18px;
-        background-size: 100% 100%;
-    }
-
-    .privacy-link {
-        font-size: 17px;
-        line-height: 10px;
-    }
-}
-
-@media only screen and (max-width: 390px) {
-    .logo {
-        margin-top: 0;
-        width: 130px;
-        height: auto;
-    }
-
-    .top-container {
-        margin-top: 5%;
-    }
-
-    .welcome-container {
-        margin-top: 18%;
-        margin-left: 5%;
-        width: 100%;
-    }
-
-    .center-container {
-        margin-top: 0;
-        padding: 0;
-        margin-left: 5%;
-        width: 100%;
-    }
-
-    .card img {
-        height: 75px;
-    }
-
-    .card-container {
-        margin-top: 0;
-        margin-left: 85px;
-        padding: 0;
-        background-color: transparent;
-    }
-
-    .card {
-        width: 47%;
-        margin: 5px 5px;
-    }
-
-    @media (max-width: 390px) {
-        .card-container {
-            width: 95%;
-            margin: 0 auto;
-        }
-
-        Copy code .card {
-            width: 20%;
-            /* Aumentar el ancho de cada card */
-            text-align: center;
-            margin: 0 10px;
-            /* Espacio entre cada card */
-        }
-    }
-
-    .card-button {
-        font-size: 7px;
-        font-weight: 900;
-    }
-
-    .card h3 {
-        font-size: 11px;
-    }
-
-    .card-description {
-        padding: 8px;
-        height: 75px;
-        width: 91%;
-    }
-
-    .title {
-        margin-top: 10px;
-        font-size: 20px;
-        margin-bottom: 0;
-    }
-
-    h1 {
-        font-size: 25px;
-        margin-bottom: 0;
-    }
-
-    h4 {
-        font-size: 15px;
-        margin-bottom: 0px;
-    }
-
-    .image-container {
-        background-image: url('../images/mobile.png');
-    }
-
-    .button-container {
-        margin-top: 0;
-    }
-
-    .nav-button {
-        width: 60%;
-        line-height: 20px;
-        font-size: 12px;
-        margin: 0;
-        padding: 0;
-        margin-top: 5px;
-    }
-
-    .icon {
-        width: 18px;
-        height: 18px;
-        background-size: 100% 100%;
-    }
-
-    .privacy-link {
-        font-size: 17px;
-        line-height: 10px;
-    }
-}
-
-@media screen and (min-height: 1000px) and (min-width: 992px) {
-    .welcome-container {
-        width: 57%;
-        margin-top: 8%;
-    }
-
-    .center-container {
-        margin: 0 auto;
-        position: relative;
-        width: 57%;
-        margin-top: 1%;
-    }
-
-    .card-container {
-        width: 55%;
-        margin: 15px auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 15px;
-        background-color: white;
-    }
-}
-
-@media screen and (max-height: 670px) and (min-width: 992px) {
-    .welcome-container {
-        margin-top: 0%;
-    }
-
-    .privacy-link {
-        font-size: 17px;
-    }
-}
-
-@media screen and (max-height: 640px) and (min-width: 992px) {
-
-    .logo {
-        margin-top: 4%;
-        width: 11%;
-        height: auto;
-    }
-
-    .title {
-        margin-top: 7px;
-    }
-
-    .card img {
-        height: 120px;
-    }
-
-    .welcome-container {
-        margin-top: 3%;
-    }
-
-    h1 {
-        font-size: 35px;
-    }
-
-    h4 {
-        font-size: 22px;
-    }
-
-    .center-container {
-        margin-top: 0.5%;
-    }
-
-    .footer-container {
-        height: 5%;
-    }
-
-    .privacy-link {
-        font-size: 17px;
-    }
-
-    .nav-button {
-        font-size: 16px;
-    }
-}

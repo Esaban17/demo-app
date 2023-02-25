@@ -31,30 +31,38 @@
 
 <body>
     <div class="container">
-        <div class="left-section">
-            <img data-src="./assets/images/logo.svg" alt="Imagen de lado izquierdo" class="logo-img">
-            <div class="sub-header">
-                <h1>Permítenos conocerte</h1>
-            </div>
-            <h4>¡Bienvenido al Wifi Bam!</h4>
-            <form id="form-data">
-                <input type="hidden" name="wlan_id" value="<?php echo($wlan_id) ?>" />
-                <input type="hidden" name="ap_mac" value="<?php echo($ap_mac) ?>" />
-                <input type="hidden" name="client_mac" value="<?php echo($client_mac) ?>" />
-                <input type="hidden" name="url" value="<?php echo($url) ?>" />
-                <input type="hidden" name="ap_name" value="<?php echo($ap_name) ?>" />
-                <input type="hidden" name="site_name" value="<?php echo($site_name) ?>" />
+        <div class="heroContainer">
+            <div class="left-section">
+                <img data-src="./assets/images/logo.svg" alt="Imagen de lado izquierdo" class="logo-img">
+                <div class="sub-header">
+                    <h1>Permítenos conocerte</h1>
+                </div>
+                <h4>¡Bienvenido al Wifi Bam!</h4>
+                <form id="form-data">
+                    <input type="hidden" name="wlan_id" value="<?php echo($wlan_id) ?>" />
+                    <input type="hidden" name="ap_mac" value="<?php echo($ap_mac) ?>" />
+                    <input type="hidden" name="client_mac" value="<?php echo($client_mac) ?>" />
+                    <input type="hidden" name="url" value="<?php echo($url) ?>" />
+                    <input type="hidden" name="ap_name" value="<?php echo($ap_name) ?>" />
+                    <input type="hidden" name="site_name" value="<?php echo($site_name) ?>" />
 
-                <p style="font-family: 'Open Sans Normal'">Ingresa tus datos</p>
-                <input type="text" id="name" name="name" placeholder="Nombre" autocomplete="off"
-                    onblur="validateForm()">
-                <input type="email" id="email" name="email" placeholder="Correo electrónico" autocomplete="off"
-                    onblur="validateForm()">
-            </form>
-            <button class="nav-button" id="btnNavegar" onclick="submitForm()">INGRESAR<i class="icon"></i></button>
-        </div>
-        <div class="right-section">
-            <img data-src="./assets/images/r1.png" alt="Imagen de lado derecho" class="responsive-img">
+                    <p style="font-family: 'Open Sans Normal'">Ingresa tus datos</p>
+                    <input type="text" id="name" name="name" placeholder="Nombre" autocomplete="off"
+                        onblur="validateForm()">
+                    <input type="email" id="email" name="email" placeholder="Correo electrónico" autocomplete="off"
+                        onblur="validateForm()">
+                </form>
+                <button class="nav-button" id="btnNavegar" onclick="submitForm()">NAVEGAR<i class="icon"></i></button>
+            </div>
+            <div class="right-section">
+                <div class="sub-headerMobile">
+                    <h1>Permítenos conocerte</h1>
+                </div>
+                <picture class="responsive-imgWrapper">
+                    <source media="(min-width: 992px)" srcset="./assets/images/r1.png">
+                    <img src="./assets/images/r2.png" alt="Imagen de lado derecho" class="responsive-img">
+                </picture>
+            </div>
         </div>
         <div class="footer-container">
             <hr />

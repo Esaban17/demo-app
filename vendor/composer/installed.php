@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'spectre/portal',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => '664f996aaeb8aabb96c09261960e1a4fecea8819',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -20,9 +20,9 @@
             'dev_requirement' => false,
         ),
         'spectre/portal' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '664f996aaeb8aabb96c09261960e1a4fecea8819',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
