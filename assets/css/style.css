@@ -232,73 +232,62 @@ hr {
 
 /*TABLETS*/
 
-@media only screen and (width: 768px) and (height: 640px) {
-    /* Estilos para una resolución de 1366 x 768 píxeles */
-    .container {
-        flex-wrap: wrap;
-        height: 100vh;
-        /* permite que los elementos se acomoden en varias filas */
+@media only screen and (min-width: 768px) and (max-width:991px) {
+    .heroContainer .left-section{
+        height: 55%;
     }
-
-    h1 {
-        font-size: 50px;
+    .heroContainer .right-section{
+        height: 45%;
     }
-
-    
-
-    .right-section {
-        height: 46%;
-    }
-
-    .logo-img {
-        position: relative;
-        top: 110px;
-    }
-
-    .left-section,
-    .right-section {
-        width: 100%;
-        /* ambos elementos ocupan el ancho completo de la pantalla */
-    }
-
-    .responsive-img {
-        content: url('../images/rtablet.png');
-        height: 450px;
-    }
-
-    .left-section img {
-        width: 130px;
-        height: 40px;
-    }
-
-    .left-section form {
-        width: 65%;
-        height: 40%;
-    }
-
-    .left-section input {
-        height: 30%;
-    }
-
-    .nav-button {
+    .sub-headerMobile h1 {
         font-family: sans-serif;
         font-style: normal;
-        font-size: 25px;
-        letter-spacing: -0.375px;
-        margin-left: 30px;
-        color: #6d6c6b;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: -0.45px;
+        display: block;
     }
 
-    .privacy-link {
-        float: center;
-    } 
+    .left-section input{
+        height: 30%;
+        margin-bottom: 15px;
+        margin-top: 0px;
+        font-size: 10px;
+    
+    }
+    .left-section form p {
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+    .left-section h4{
+        margin-top: 0px;
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+
+    .nav-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px !important;
+        padding: 3px 30px;
+    }
+    .nav-button .icon{
+        display: flex;
+        width: 15px;
+        height: 15px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 }
 
 /*MOVIL*/
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
 
     .heroContainer{
         flex-direction: column-reverse;
@@ -319,6 +308,7 @@ hr {
         line-height: 26px;
         text-align: center;
         letter-spacing: -0.45px;
+        display: block;
     }
     .sub-header{
         display: none;

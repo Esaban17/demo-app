@@ -60,6 +60,7 @@
                 </div>
                 <picture class="responsive-imgWrapper">
                     <source media="(min-width: 992px)" srcset="./assets/images/r1.png">
+                    <source media="(min-width: 768px)" srcset="./assets/images/rtablet.png">
                     <img src="./assets/images/r2.png" alt="Imagen de lado derecho" class="responsive-img">
                 </picture>
             </div>
