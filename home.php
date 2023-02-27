@@ -39,14 +39,14 @@
                 <div class="card">
                     <img src="./assets/images/card-2.png" alt="Abre tu Cuenta Fácil" class="card-img-2">
                     <div class="card-description" style="background-color: #FF7F41;">
-                        <h3 style="margin-bottom:0; margin-top: 0;">Abre tu Cuenta Fácil</h3>
+                        <h3 style="margin-bottom:0; margin-top: 0;">Abre tu Cuenta <br class="brDesktop"> Fácil</h3>
                         <button class="card-button" onclick="redirectCuenta()">CONOCE MÁS</button>
                     </div>
                 </div>
                 <div class="card">
                     <img data-src="./assets/images/card-3.png" alt="Solicita tu Crédito Fácil" class="card-img-3">
                     <div class="card-description" style="background-color: #F5B6CD;">
-                        <h3 style="margin-bottom:0; margin-top: 0;">Solicita tu Crédito Fácil</h3>
+                        <h3 style="margin-bottom:0; margin-top: 0;">Solicita tu <br class="brDesktop"> Crédito Fácil</h3>
                         <button class="card-button" onclick="redirectCredito()">CONOCE MÁS</button>
                     </div>
                 </div>
