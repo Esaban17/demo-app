@@ -460,6 +460,12 @@ hr {
 
 /*MOVIL*/
 
+@media only screen and (min-height: 700px) and (max-width:991px){
+    .image-container{
+        justify-content: space-evenly;
+    }
+}
+
 @media only screen and (max-width: 991px) {
     .logo {
         width: 20%;
