@@ -345,9 +345,15 @@ hr {
 .brDesktop{
     display: none;
 }
+.brMobile{
+    display: block;
+}
 /*DESKTOP*/
 
 @media only screen and (min-width: 992px)  {
+    .brMobile{
+        display: none;
+    }
     .brDesktop{
         display: block;
     }
@@ -462,7 +468,16 @@ hr {
 
 @media only screen and (min-height: 700px) and (max-width:991px){
     .image-container{
-        justify-content: space-evenly;
+        justify-content: flex-start;
+        gap: 2rem;    
+    }
+}
+@media only screen and (max-width:768px){
+    .card-description h3{
+        font-size: 10.2px !important;   
+    }
+    .card-button{
+        font-size: 7px !important;
     }
 }
 

@@ -32,7 +32,7 @@
                     <div class="card">
                         <img src="./assets/images/card-1.png" alt="Regístrate en nuestra App" class="card-img-1">
                         <div class="card-description" style="background-color: #00C389;">
-                            <h3 style="margin-bottom:0; margin-top: 0;">Regístrate en nuestra App</h3>
+                            <h3 style="margin-bottom:0; margin-top: 0;">Regístrate en <br class="brMobile"> nuestra App</h3>
                             <button id="btn-registerApp" class="card-button" onclick="redirectRegister()">CONOCE
                                 MÁS</button>
                         </div>
@@ -40,21 +40,21 @@
                     <div class="card">
                         <img src="./assets/images/card-2.png" alt="Abre tu Cuenta Fácil" class="card-img-2">
                         <div class="card-description" style="background-color: #FF7F41;">
-                            <h3 style="margin-bottom:0; margin-top: 0;">Abre tu Cuenta <br class="brDesktop"> Fácil</h3>
+                            <h3 style="margin-bottom:0; margin-top: 0;">Abre tu Cuenta <br class="brDesktop"> Fácil<br class="brMobile"><br class="brMobile"></h3>
                             <button class="card-button" onclick="redirectCuenta()">CONOCE MÁS</button>
                         </div>
                     </div>
                     <div class="card">
                         <img data-src="./assets/images/card-3.png" alt="Solicita tu Crédito Fácil" class="card-img-3">
                         <div class="card-description" style="background-color: #F5B6CD;">
-                            <h3 style="margin-bottom:0; margin-top: 0;">Solicita tu <br class="brDesktop"> Crédito Fácil</h3>
+                            <h3 style="margin-bottom:0; margin-top: 0;">Solicita tu<br class="brMobile"> <br class="brDesktop"> Crédito Fácil</h3>
                             <button class="card-button" onclick="redirectCredito()">CONOCE MÁS</button>
                         </div>
                     </div>
                     <div class="card">
                         <img data-src="./assets/images/card-4.png" alt="Solicita tu Tarjeta de Crédito" class="card-img-4">
                         <div class="card-description" style="background-color: #59CBE8;">
-                            <h3 style="margin-bottom:0; margin-top: 0;">Solicita tu Tarjeta de Crédito</h3>
+                            <h3 style="margin-bottom:0; margin-top: 0;">Solicita tu Tarjeta de<br class="brMobile"> Crédito</h3>
                             <button class="card-button" onclick="redirectTarjeta()">CONOCE MÁS</button>
                         </div>
                     </div>
