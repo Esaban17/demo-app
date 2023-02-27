@@ -258,7 +258,9 @@ hr {
     
     }
     .left-section form{
-        width: 45% !important;
+        width: 60% !important;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
     }
     .left-section form p {
         margin-bottom: 5px;

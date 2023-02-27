@@ -552,7 +552,8 @@ hr {
         transform: translateZ(-10px);
     }
     .welcome-container,
-    .center-container{
+    .center-container,
+    .top-container{
         z-index: 999;
     }
 
@@ -573,6 +574,9 @@ hr {
     }
     .card-description h3 {
         font-size: 14.2px !important;
+    }
+    .card{
+        width: 45% !important;
     }
 }
 
