@@ -32,7 +32,7 @@
                     <div class="card">
                         <img src="./assets/images/card-1.png" alt="Regístrate en nuestra App" class="card-img-1">
                         <div class="card-description" style="background-color: #00C389;">
-                            <h3 style="margin-bottom:0; margin-top: 0;">Regístrate en <br class="brMobile"> nuestra App</h3>
+                            <h3 style="margin-bottom:0; margin-top: 0;">Regístrate en <br class="brDesktop"> <br class="brMobile"> nuestra App</h3>
                             <button id="btn-registerApp" class="card-button" onclick="redirectRegister()">CONOCE
                                 MÁS</button>
                         </div>
@@ -54,7 +54,7 @@
                     <div class="card">
                         <img data-src="./assets/images/card-4.png" alt="Solicita tu Tarjeta de Crédito" class="card-img-4">
                         <div class="card-description" style="background-color: #59CBE8;">
-                            <h3 style="margin-bottom:0; margin-top: 0;">Solicita tu Tarjeta de<br class="brMobile"> Crédito</h3>
+                            <h3 style="margin-bottom:0; margin-top: 0;">Solicita tu Tarjeta de<br class="brMobile"><br class="brDesktop"> Crédito</h3>
                             <button class="card-button" onclick="redirectTarjeta()">CONOCE MÁS</button>
                         </div>
                     </div>
