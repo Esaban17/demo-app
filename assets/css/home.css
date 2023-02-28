@@ -356,6 +356,9 @@ hr {
 /*DESKTOP*/
 
 @media only screen and (min-width: 992px)  {
+    .left-section{
+        gap: 1rem;
+    }
     .swal2-popup {
         border-radius: 0 !important;
         width: 30% !important;
