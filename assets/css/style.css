@@ -67,8 +67,38 @@ body {
     -webkit-box-shadow: 0px 4px 15px 0 rgb(0 0 0 / 5%);
     -moz-box-shadow: 0px 4px 15px 0 rgb(0 0 0 / 5%);
 }
+.input-wrapper{
+    position: relative;
+    width: 100%;
+}
+.control-label {
+    font-family: 'Open Sans Normal' !important;
+    padding: 7px 5px !important;
+    display: block;
+    position: absolute;
+    opacity: 0;
+    bottom: 1.9rem;
+    color: #5d5d5d;
+    transition: 0.2s ease-in-out transform;
+    font-size: 12px;
+  }
 
+.form-control:placeholder-shown + .control-label {
+    visibility: hidden;
+    z-index: -1;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .form-control:not(:placeholder-shown) + .control-label,
+  .form-control:focus:not(:placeholder-shown) + .control-label {
+    visibility: visible;
+    z-index: 1;
+    opacity: 1;
+    transform: translateY(-10px);
+    transition: 0.2s ease-in-out transform;
+  }
 .left-section input {
+    font-family: 'Open Sans Normal' !important;
     width: 100%;
     padding: 7px 5px !important;
     box-sizing: border-box;
@@ -255,7 +285,6 @@ hr {
     }
 
     .left-section input{
-        height: 30%;
         margin-top: 0px;
         font-size: 10px;
         margin-bottom: 25px;
@@ -383,9 +412,6 @@ hr {
     
     }
 
-    .left-section input {
-        height: 30%;
-    }
     hr{
         width: 94%;
         margin: 0 auto;
