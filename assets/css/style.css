@@ -234,10 +234,10 @@ hr {
 
 @media only screen and (min-width: 768px) and (max-width:991px) {
     .heroContainer .left-section{
-        height: 55%;
+        height: 45%;
     }
     .heroContainer .right-section{
-        height: 45%;
+        height: 55%;
     }
     .sub-headerMobile h1 {
         font-family: 'Open Sans Normal' !important;
