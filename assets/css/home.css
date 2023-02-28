@@ -206,11 +206,11 @@ hr {
 }
 
 .swal2-styled.swal2-confirm {
-    font-family: 'Open Sans Normal' !important;
+    font-family: 'CIBFont Sans Bold' !important;
     font-style: normal !important;
     font-weight: 700 !important;
-    font-size: 14px !important;
-    line-height: 16px !important;
+    font-size: 20px !important;
+    line-height: 15px !important;
     letter-spacing: -0.3px !important;
     color: #2C2A29 !important;
     border-radius: 1.25em !important;
@@ -220,8 +220,8 @@ hr {
 
 
 .swal2-title {
-    font-size: 1.375em !important;
-    font-family: 'Open Sans Normal' !important;
+    font-size: 1.500em !important;
+    font-family: 'CIBFont Sans Bold' !important;
     color: #000 !important;
 }
 
@@ -337,9 +337,9 @@ hr {
 
 .swal2-html-container {
     margin: 0.5em 1.6em 0.3em !important;
-    font-family: 'CIBFont Sans Light' !important;
+    font-family: 'Open Sans Normal' !important;
     color: #000 !important;
-    font-size: 14px !important;
+    font-size: 16px !important;
 }
 .swal2-close{
     color: #000 !important;
