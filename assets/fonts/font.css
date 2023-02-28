@@ -2,3 +2,13 @@
     font-family: 'Open Sans Normal';
     src: url('./OpenSans-VariableFont.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'CIBFont Sans';
+    src: url('./OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CIBFont Sans Light';
+    src: url('./CIBFontSans-Light.woff') format('truetype');
+}

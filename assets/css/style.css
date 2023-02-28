@@ -38,7 +38,7 @@ body {
 }
 
 .left-section h1 {
-    font-family: sans-serif;
+    font-family: 'Open Sans Normal' !important;
     font-style: normal;
     font-weight: 700;
     font-size: 35px;
@@ -51,7 +51,7 @@ body {
 
 .left-section h4 {
     margin-top: 70px;
-    font-family: sans-serif;
+    font-family: 'Open Sans Normal' !important;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -185,14 +185,14 @@ hr {
     }
 
     .left-section h1 {
-        font-weight: 600;
+        font-weight: 700;
         font-size: 26px;
         line-height: 20px;
     }
 
     .left-section h4 {
         margin-top: 35px;
-        font-family: sans-serif;
+        font-family: 'Open Sans Normal' !important;
         font-style: normal;
         font-weight: 700;
         font-size: 20px;
@@ -240,7 +240,7 @@ hr {
         height: 45%;
     }
     .sub-headerMobile h1 {
-        font-family: sans-serif;
+        font-family: 'Open Sans Normal' !important;
         font-style: normal;
         font-weight: 700;
         font-size: 22px;
@@ -306,7 +306,7 @@ hr {
     }
 
     .sub-headerMobile h1 {
-        font-family: sans-serif;
+        font-family: 'Open Sans Normal' !important;
         font-style: normal;
         font-weight: 700;
         font-size: 22px;
