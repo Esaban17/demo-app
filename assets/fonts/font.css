@@ -12,3 +12,8 @@
     font-family: 'CIBFont Sans Light';
     src: url('./CIBFontSans-Light.woff') format('truetype');
 }
+
+@font-face {
+    font-family: 'CIBFont Sans Bold';
+    src: url('./CIBFontSans-Bold.woff') format('truetype');
+}

@@ -38,7 +38,7 @@ body {
 }
 
 .left-section h1 {
-    font-family: 'Open Sans Normal' !important;
+    font-family: 'CIBFont Sans Bold' !important;
     font-style: normal;
     font-weight: 700;
     font-size: 35px;
@@ -186,13 +186,13 @@ hr {
 
     .left-section h1 {
         font-weight: 700;
-        font-size: 26px;
+        font-size: 30px;
         line-height: 20px;
     }
 
     .left-section h4 {
         margin-top: 35px;
-        font-family: 'Open Sans Normal' !important;
+        font-family: 'CIBFont Sans Bold' !important;
         font-style: normal;
         font-weight: 700;
         font-size: 20px;
@@ -201,7 +201,7 @@ hr {
 
     .left-section form {
         height: fit-content;
-        width: 60%;
+        width: 65%;
     }
 
     .left-section input {
@@ -213,11 +213,12 @@ hr {
     }
 
     .nav-button {
-        font-size: 15px;
+        font-size: 20px;
         letter-spacing: -0.375px;
-        font-family: sans-serif;
+        font-family: 'CIBFont Sans Bold';
         font-style: normal;
         color: #6d6c6b;
+        width: 45%;
     }
 
     .icon {

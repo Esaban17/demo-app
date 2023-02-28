@@ -149,8 +149,7 @@
         let cookieShow = getCookie("alertShow");
         console.log(cookieShow);
 
-        if (cookieShow != "") {
-            Swal.fire({
+        Swal.fire({
                 title: "Conexión exitosa",
                 text: "Bienvenido a la red WiFi.",
                 iconHtml: '<img src="./assets/images/check.svg">',
@@ -167,7 +166,11 @@
                 setCookie("alertShow", "", 1);
                 deleteCookie("alertShow");
             });
+            /*
+        if (cookieShow != "") {
+
         }
+        */
 
     });
     </script>
