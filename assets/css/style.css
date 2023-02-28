@@ -233,6 +233,9 @@ hr {
 /*TABLETS*/
 
 @media only screen and (min-width: 768px) and (max-width:991px) {
+    .responsive-imgWrapper{
+        margin-top: -3rem;
+    }
     .heroContainer .left-section{
         height: 45%;
     }
@@ -261,6 +264,8 @@ hr {
         width: 60% !important;
         justify-content: flex-start !important;
         align-items: flex-start !important;
+        padding: 30px;
+        gap: 2rem;
     }
     .left-section form p {
         margin-bottom: 5px;
