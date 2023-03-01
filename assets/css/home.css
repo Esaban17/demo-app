@@ -45,9 +45,11 @@ h3{
 }
 
 .welcome-container {
+    margin-top: 0%;
+    margin-left: 0%;
+    padding-top: 0;
+    width: 80%;
     margin: 0 auto;
-    position: relative;
-    width: 50%;
     margin-top: 3%;
 }
 
@@ -393,8 +395,11 @@ hr {
     }
 
     .welcome-container {
-        width: 100%;
-        margin: 0 auto;
+        margin-top: 0%;
+        margin-left: 0%;
+        padding-top: 0;
+        width: 80%;
+        margin: 0 auto 0 0;
         margin-top: 5%;
     }
 
@@ -517,15 +522,24 @@ hr {
 @media only screen and (min-height: 700px) and (max-width:991px){
     .image-container{
         justify-content: flex-start;
-        gap: 2rem;    
+        gap: 1rem;  
     }
 }
 @media only screen and (max-width:768px){
     .card-description h3{
-        font-size: 10.2px !important;   
+        font-size: 11.2px !important;
     }
     .card-button{
-        font-size: 7px !important;
+        width: fit-content !important;
+        font-size: 10px !important;
+        padding: 7px 10px !important;
+    }
+    .welcome-container{
+        margin-top: 0%;
+        margin-left: 0%;
+        padding-top: 0;
+        width: 80%;
+        margin: 0 auto;
     }
 }
 
@@ -539,10 +553,34 @@ hr {
 }
 
 
-
+.brTablet{
+    display: none;
+}
 /* Tablet */
 
 @media only screen and (min-width: 768px) and (max-width:991px)  {
+    .brTablet{
+        display: block;
+    }
+    .brMobile{
+        display: none;
+    }
+    .brDesktop{
+        display: none;
+    }
+    .logo{
+        width: 150px !important;
+        height: 42.09px !important;
+    }
+    .title{
+        font-size: 24px !important;
+    }
+    #greeting{
+        font-size: 28px !important;
+    }
+    .center-container h4{
+        font-size: 20px !important;
+    }
     .swal2-popup {
         border-radius: 0 !important;
         width: 45% !important;
@@ -553,13 +591,17 @@ hr {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        width: 77%;
+        width: 70%;
         margin: 0 auto;
+        margin-top: 2.5rem;
     }
 
     .welcome-container {
-        width: 100%;
-        margin: 0 auto !important;
+        margin-top: 0%;
+        margin-left: 0%;
+        padding-top: 0;
+        width: 80%;
+        margin: 0 auto;
         margin-top: 5%;
     }
 
@@ -569,8 +611,7 @@ hr {
         background: #fff !important;
         box-shadow: 0px 6px 14px 0px rgb(0 0 0 / 10%);
         position: relative;
-        transform-style: preserve-3d;
-        z-index: 9;
+        padding: 0.85rem 0px !important;
     }
     .welcome-container,
     .center-container,
@@ -587,17 +628,22 @@ hr {
     }
 
     .card-button{
-        width: fit-content !important;
-        font-size: 10px !important;
+        width: 85% !important;
+        font-size: 14px !important;
     }
     .button-container {
         width: 100%;
     }
     .card-description h3 {
-        font-size: 14.2px !important;
+        font-size: 20px !important;
     }
     .card{
         width: 45% !important;
+    }
+    .nav-button{
+        font-size: 18px !important;
+        padding: 10px 24px !important;
+        margin-top: 2rem !important; 
     }
 }
 
@@ -760,7 +806,7 @@ hr {
     }
 
     .title {
-        font-size: 20px;
+        font-size: 18px;
         margin-top: 25px;
         margin: 0px;
     }
@@ -779,13 +825,16 @@ hr {
         text-align: center;
     }
     .center-container h4{
-        font-size: 12px;
+        font-size: 16px;
+        margin-bottom: 0px;
     }
 
     .welcome-container {
         margin-top: 0%;
-        margin-left: 28%;
+        margin-left: 0%;
         padding-top: 0;
+        width: 80%;
+        margin: 0 auto;
     }
 
     .center-container {
@@ -886,6 +935,10 @@ hr {
         margin-right: 0px;
         margin-left: 2px;
         font-family: 'Open Sans Normal' !important;
+    }
+    .card-description-container{
+        width: fit-content;
+        margin: 0 auto;
     }
 
 }
