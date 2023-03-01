@@ -302,10 +302,48 @@ hr {
     }
 }
 
+@media only screen and (min-width: 1440px) {
+    .responsive-imgWrapper{
+        height: 75%;
+    }
+    .responsive-img{
+        height: 100%;
+    }
+    .left-section{
+        padding-top: 5rem;
+    }
+    .left-section .logo-img{
+        width: 200px;
+        height:56.12px;
+    }
+    .left-section h1{
+        margin-top: 3rem;
+        font-size: 40px;
+    }
+    .left-section h4{
+        font-size: 28px !important;
+        margin-top: 35px;
+    }
+    .left-section form{
+        padding: 32px !important;
+        font-size: 27px !important;
+        margin-top: 5rem !important;
+    }
+    .left-section input {
+        font-size: 14px;
+    }
+    .left-section form p {
+        font-size: 18px;
+    }
+}
+
 
 /*TABLETS*/
 
 @media only screen and (min-width: 768px) and (max-width:991px) {
+    #greeting{
+        font-size: 32px !important;
+    }
     .responsive-imgWrapper{
         margin-top: -3rem;
         padding-left: 3.5rem !important;

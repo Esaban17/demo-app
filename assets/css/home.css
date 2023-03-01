@@ -36,7 +36,7 @@ h3{
 }
 
 .title {
-    font-family: sans-serif;
+    font-family: 'CIBFont Sans Bold' !important;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -154,7 +154,7 @@ h3{
 }
 
 h1 {
-    font-family: 'Open Sans Normal' !important;
+    font-family: 'CIBFont Sans Bold' !important;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -447,7 +447,7 @@ hr {
     }
 
     h1 {
-        font-family: 'Open Sans Normal' !important;
+        font-family: 'CIBFont Sans Bold' !important;
         font-style: normal;
         font-weight: 700;
         font-size: 30px !important;
@@ -493,6 +493,15 @@ hr {
 @media only screen and (min-width: 1440px)  {
     .contentWrapper{
         width: 56%;
+        margin-top: 2rem;
+    }
+    .logo{
+        width: 220px;
+        height: 61.73px;
+    }
+    .title{
+        font-size: 32px;
+        margin-top: 3rem;
     }
 }
 @media only screen and (min-width: 1800px)  {
@@ -561,19 +570,6 @@ hr {
         position: relative;
         transform-style: preserve-3d;
         z-index: 9;
-    }
-    .card-container::after {
-        height: 50%;
-        width: 40%;
-        background: #fff;
-        content: "";
-        position: absolute;
-        top: -77px;
-        right: 9%;
-        border-radius: 10px;
-        box-shadow: 0px 6px 14px 0px rgb(0 0 0 / 10%);
-        z-index: -5;
-        transform: translateZ(-10px);
     }
     .welcome-container,
     .center-container,
