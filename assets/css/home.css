@@ -495,6 +495,12 @@ hr {
         width: 56%;
         margin-top: 2rem;
     }
+}
+@media only screen and (min-width: 1800px)  {
+    .contentWrapper{
+        width: 45%;
+    }
+
     .logo{
         width: 220px;
         height: 61.73px;
@@ -502,11 +508,6 @@ hr {
     .title{
         font-size: 32px;
         margin-top: 3rem;
-    }
-}
-@media only screen and (min-width: 1800px)  {
-    .contentWrapper{
-        width: 40%;
     }
 }
 

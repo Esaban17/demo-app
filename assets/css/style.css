@@ -322,12 +322,12 @@ hr {
     }
     .left-section h4{
         font-size: 28px !important;
-        margin-top: 35px;
+        margin-top: 5rem !important;
     }
     .left-section form{
         padding: 32px !important;
         font-size: 27px !important;
-        margin-top: 5rem !important;
+        /* margin-top: 5rem !important; */
     }
     .left-section input {
         font-size: 14px;
