@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
   }
-  
+
 body {
     background-color: #f4f4f4;
 }
@@ -205,6 +205,48 @@ hr {
     letter-spacing: -0.2px;
 }
 
+.swal2-container.swal2-backdrop-show, .swal2-container.swal2-noanimation {
+    background: rgba(92, 92, 92, 0.9) !important;
+}
+
+.loaderModalContainer{
+    height: 159px;
+    width: 159px !important;
+    padding: 0px !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50% !important; 
+}
+
+.loaderModalText{
+    font-family: 'Open Sans Normal' !important;
+    font-weight: normal;
+}
+
+.loader {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #2C2A29;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+  
+  
 /*DESKTOP*/
 
 @media screen and (min-width: 992px) {
@@ -266,6 +308,7 @@ hr {
 @media only screen and (min-width: 768px) and (max-width:991px) {
     .responsive-imgWrapper{
         margin-top: -3rem;
+        padding-left: 3.5rem !important;
     }
     .heroContainer .left-section{
         height: 45%;
@@ -294,8 +337,8 @@ hr {
         width: 60% !important;
         justify-content: flex-start !important;
         align-items: flex-start !important;
-        padding: 30px;
-        gap: 2rem;
+        padding: 15px 25px;
+        gap: 1.5rem;
     }
     .left-section form p {
         margin-bottom: 5px;
@@ -311,8 +354,8 @@ hr {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 10px !important;
-        padding: 1px 45px;
+        padding: 8px 40px !important;
+        font-size: 15px !important;
     }
     .nav-button .icon{
         display: flex;
@@ -320,6 +363,9 @@ hr {
         height: 15px;
         background-size: contain;
         background-repeat: no-repeat;
+    }
+    .privacy-link{
+        font-size: 14px !important;
     }
 }
 

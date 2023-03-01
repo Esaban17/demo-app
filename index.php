@@ -25,6 +25,8 @@
     <title>¡Bienvenido al Wifi Bam!</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="./assets/fonts/font.css" rel="stylesheet">
+    <script src="./assets/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="./assets/sweetalert2.min.css">
     <meta name="viewport"
         content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
@@ -104,7 +106,6 @@
     });
 
     async function submitForm() {
-
         try {
             const form = document.getElementById('form-data');
             const name = form.elements.name.value;
@@ -150,9 +151,23 @@
                 //setCookie("url", data.url, 1);
                 setCookie("alertShow", true, 1);
 
+                setTimeout(function() {
+                    window.location.href = "home.php";
+                },
+                3000
+                );
 
-                window.location.href = "home.php";
+                Swal.fire({
+                width: 159,
+                height: 159,
+                showConfirmButton: false,
+                html: '<div class="loaderModal"><div class="loaderCssContainer"><span class="loader"></span></div><p class="loaderModalText">Cargando</p></div>',
+                customClass: {
+                    popup: 'loaderModalContainer',
+                }
+                })
                 
+
                 /*
                 var iframe = document.getElementById("miIframe");
                 iframe.src = data.url;
