@@ -355,6 +355,9 @@ hr {
 .brMobile{
     display: block;
 }
+
+
+
 /*DESKTOP*/
 
 @media only screen and (min-width: 992px)  {
@@ -381,11 +384,11 @@ hr {
         width: 77%;
         margin: 0 auto;
     }
-    .brMobile{
-        display: none;
+    .brMobile{ 
+        display: none !important;
     }
     .brDesktop{
-        display: block;
+        display: block !important;
     }
     .card-description h3{
         overflow: hidden;
@@ -406,7 +409,7 @@ hr {
     .card {
         width: 24%;
         text-align: center;
-        margin: 0px 5px;
+        margin: 0px !important;
     }
 
     .card img {
@@ -420,9 +423,10 @@ hr {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 15px;
+        padding: 18.57px;
         background-color: white;
         box-shadow: 0px 6px 14px 0px rgb(0 0 0 / 10%);
+        gap: 24px !important;
     }
 
     .card-description {
@@ -495,15 +499,19 @@ hr {
         width: 100%;
     }
 }
+
 @media only screen and (min-width: 1440px)  {
     .contentWrapper{
-        width: 56%;
-        margin-top: 2rem;
+        width: 56% !important;
+        margin-top: 2rem !important;
     }
 }
+
+
+
 @media only screen and (min-width: 1800px)  {
     .contentWrapper{
-        width: 45%;
+        width: 45% !important;
     }
 
     .logo{
@@ -517,139 +525,11 @@ hr {
 }
 
 
+
+
+
+
 /*MOVIL*/
-
-@media only screen and (min-height: 700px) and (max-width:991px){
-    .image-container{
-        justify-content: flex-start;
-        gap: 1rem;  
-    }
-}
-@media only screen and (max-width:768px){
-    .card-description h3{
-        font-size: 11.2px !important;
-    }
-    .card-button{
-        width: fit-content !important;
-        font-size: 10px !important;
-        padding: 7px 10px !important;
-    }
-    .welcome-container{
-        margin-top: 0%;
-        margin-left: 0%;
-        padding-top: 0;
-        width: 80%;
-        margin: 0 auto;
-    }
-}
-
-@media only screen and (max-width:768px) and (max-height:699px){
-    .image-container{
-        justify-content: space-between;
-    }
-    .button-container{
-        margin-bottom: 5%;
-    }
-}
-
-
-.brTablet{
-    display: none;
-}
-/* Tablet */
-
-@media only screen and (min-width: 768px) and (max-width:991px)  {
-    .brTablet{
-        display: block;
-    }
-    .brMobile{
-        display: none;
-    }
-    .brDesktop{
-        display: none;
-    }
-    .logo{
-        width: 150px !important;
-        height: 42.09px !important;
-    }
-    .title{
-        font-size: 24px !important;
-    }
-    #greeting{
-        font-size: 28px !important;
-    }
-    .center-container h4{
-        font-size: 20px !important;
-        margin-bottom: 10px !important;
-    }
-    .swal2-popup {
-        border-radius: 0 !important;
-        width: 45% !important;
-    }
-    
-    .contentWrapper{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 70%;
-        margin: 0 auto;
-        margin-top: 2.5rem;
-    }
-
-    .welcome-container {
-        margin-top: 0%;
-        margin-left: 0%;
-        padding-top: 0;
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 5%;
-    }
-
-
-    .card-container {
-        width: 100%;
-        background: #fff !important;
-        box-shadow: 0px 6px 14px 0px rgb(0 0 0 / 10%);
-        position: relative;
-        padding: 23px 0px !important;
-        gap: 20px;
-    }
-    .welcome-container,
-    .center-container,
-    .top-container{
-        z-index: 999;
-    }
-
-    .center-container {
-        margin: 0 auto;
-        position: relative;
-        /* width: 57%; */
-        margin-top: 1%;
-        width: 100%;
-    }
-
-    .card-button{
-        width: 85% !important;
-        font-size: 14px !important;
-    }
-    .button-container {
-        width: 100%;
-    }
-    .card-description h3 {
-        font-size: 20px !important;
-    }
-    .card{
-        width: 45% !important;
-        margin: 0px !important;
-    }
-    .nav-button{
-        font-size: 18px !important;
-        padding: 10px 24px !important;
-        margin-top: 2rem !important; 
-    }
-}
-
 @media only screen and (max-width: 991px) {
     .logo {
         width: 20%;
@@ -695,6 +575,7 @@ hr {
         align-items: center;
         background-color: white;
         padding: 0;
+        gap: 15px 12px !important;
     }
 
     @media (min-width: 992px) {
@@ -714,7 +595,7 @@ hr {
 
     .card {
         width: 46%;
-        margin: 10px 10px;
+        margin: 0px;
         /* Ajustar el ancho de cada card /
         text-align: center;
         margin: 0 10px;
@@ -885,11 +766,14 @@ hr {
         flex-wrap: wrap;
         margin: 0px !important;
         width: 100%;
-        background:transparent;
+        gap: 15px 12px !important;
+        width: 80%;
+        margin: 0 auto !important;
+        padding: 12px 9px !important;
     }
 
     .card {
-        width: 40%;
+        width: 46%;
     }
 
     .card img {
@@ -945,4 +829,148 @@ hr {
     }
 
 }
+
+@media only screen and (max-width:768px) and (max-height:699px){
+    .image-container{
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+    .button-container{
+        margin-bottom: 5%;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .card-description h3{
+        font-size: 11.2px !important;
+    }
+    .card-button{
+        width: fit-content !important;
+        font-size: 10px !important;
+        padding: 7px 10px !important;
+    }
+    .welcome-container{
+        margin-top: 0%;
+        margin-left: 0%;
+        padding-top: 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-height: 700px) and (max-width:991px){
+    .image-container{
+        justify-content: flex-start;
+        gap: 1rem;  
+    }
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width:991px)  {
+    .brTablet{
+        display: block !important;
+    }
+    .brMobile{
+        display: none;
+    }
+    .brDesktop{
+        display: none;
+    }
+    .logo{
+        width: 150px !important;
+        height: 42.09px !important;
+    }
+    .title{
+        font-size: 24px !important;
+    }
+    #greeting{
+        font-size: 28px !important;
+    }
+    .center-container h4{
+        font-size: 20px !important;
+        margin-bottom: 10px !important;
+    }
+    .swal2-popup {
+        border-radius: 0 !important;
+        width: 45% !important;
+    }
+    
+    .contentWrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+    }
+
+    .welcome-container {
+        margin-top: 0%;
+        margin-left: 0%;
+        padding-top: 0;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 2%;
+    }
+
+
+    .card-container {
+        width: 70%;
+        background: #fff !important;
+        box-shadow: 0px 6px 14px 0px rgb(0 0 0 / 10%);
+        position: relative;
+        padding: 23px 20px !important;
+        gap: 20px !important;
+    }
+    .welcome-container,
+    .center-container,
+    .top-container{
+        z-index: 999;
+    }
+
+    .center-container {
+        margin: 0 auto;
+        position: relative;
+        /* width: 57%; */
+        margin-top: 1%;
+        width: 100%;
+    }
+
+    .card-button{
+        width: 85% !important;
+        font-size: 14px !important;
+    }
+    .button-container {
+        width: 100%;
+    }
+    .card-description h3 {
+        font-size: 20px !important;
+    }
+    .card{
+        width: 48% !important;
+        margin: 0px !important;
+    }
+    .nav-button{
+        font-size: 18px !important;
+        padding: 10px 24px !important;
+        margin-top: 2rem !important; 
+    }
+}
+
+
+
+
+
+
+
+
+.brTablet{
+    display: none;
+}
+/* Tablet */
+
+
 
