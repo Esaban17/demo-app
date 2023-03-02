@@ -304,7 +304,7 @@ hr {
 
 @media only screen and (min-width: 1440px) {
     .responsive-imgWrapper{
-        height: 75%;
+        height: 90%;
     }
     .responsive-img{
         height: 100%;
@@ -322,7 +322,7 @@ hr {
     }
     .left-section h4{
         font-size: 28px !important;
-        margin-top: 5rem !important;
+        margin-top: 2rem !important;
     }
     .left-section form{
         padding: 32px !important;
@@ -335,6 +335,14 @@ hr {
     .left-section form p {
         font-size: 18px;
     }
+}
+
+@media only screen and (min-width: 1520px) {
+
+    .left-section h4{
+        margin-top: 4rem !important;
+    }
+
 }
 
 
@@ -405,6 +413,7 @@ hr {
     .privacy-link{
         font-size: 14px !important;
     }
+ 
 }
 
 /*MOVIL*/
