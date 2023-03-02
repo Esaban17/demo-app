@@ -953,12 +953,27 @@ hr {
         width: 48% !important;
         margin: 0px !important;
     }
+    .card img{
+        height: 134.13px;
+    }
     .nav-button{
         font-size: 18px !important;
         padding: 10px 24px !important;
         margin-top: 2rem !important; 
+        margin-bottom: 1rem;
     }
 }
+
+@media only screen and (min-width: 768px) and (max-height:1024px)  {
+    .nav-button{
+        margin-bottom: 1rem;
+    }
+    .container{
+        height: 100%;
+    }
+}
+
+
 
 
 
