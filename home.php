@@ -23,7 +23,7 @@
             </div>
             <div class="contentWrapper">
                 <div class="welcome-container">
-                    <h1 id="greeting"></h1>
+                    <h1 id="greeting">Hola Velveth</h1>
                 </div>
                 <div class="center-container">
                     <h4>¡Ya estás conectada! Solicita nuestros productos.</h4>
@@ -186,7 +186,9 @@
     </script>
     <script>
     var cookieName = getCookie("name");
-    document.getElementById("greeting").innerHTML = "Hola Velveth" + cookieName;
+    if(cookieName != ""){
+        document.getElementById("greeting").innerHTML = "Hola " + cookieName;
+    }
     </script>
 </body>
 
