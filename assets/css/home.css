@@ -96,6 +96,7 @@ h3{
     padding: 10px 20px;
     color: #2C2A29;
     border-width: 1px;
+    border-width: 0.82px !important;
 }
 
 .button-container {
@@ -368,6 +369,7 @@ hr {
         justify-content: center;
         align-items: center;
         margin: 0 auto;
+        gap: 24px;
     }
     .left-section{
         gap: 1rem;
@@ -443,7 +445,8 @@ hr {
         color: #000;
         font-size: 10px;
         width: fit-content;
-        margin-top: 0.8rem;
+        margin-top: 0rem;
+        border-width: 0.82px !important;
     }
 
     .title {
@@ -510,8 +513,33 @@ hr {
 
 
 @media only screen and (min-width: 1800px)  {
+    .card-description-container{
+        gap: 40px;
+    }
     .contentWrapper{
-        width: 45% !important;
+        width: 992px !important;
+    }
+
+    .card-container{
+        height: 365px !important;
+    }
+    .card{
+        height: 100%;
+    }
+
+    .card img{
+        height: 173px;
+    }
+    .card-description{
+        height: 160px
+    }
+    .card-description h3{
+        font-size: 22px;
+    }
+
+    .card-button,
+    .nav-button{
+        font-size: 18px;
     }
 
     .logo{
@@ -634,7 +662,8 @@ hr {
         width: 90%;
         font-weight: 700;
         font-size: 9px;
-        margin-top: 0.85rem;
+        margin-top: 0rem;
+        border-width: 0.82px !important;
     }
 
     .nav-button {
@@ -826,6 +855,11 @@ hr {
     .card-description-container{
         width: fit-content;
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
     }
 
 }
@@ -848,6 +882,7 @@ hr {
         width: fit-content !important;
         font-size: 10px !important;
         padding: 7px 10px !important;
+        border-width: 0.82px !important;
     }
     .welcome-container{
         margin-top: 0%;
@@ -942,6 +977,7 @@ hr {
     .card-button{
         width: 85% !important;
         font-size: 14px !important;
+        border-width: 0.82px !important;
     }
     .button-container {
         width: 100%;
@@ -962,6 +998,9 @@ hr {
         margin-top: 2rem !important; 
         margin-bottom: 1rem;
     }
+    .card-description-container{
+        gap: 16px !important;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-height:1024px)  {
@@ -971,11 +1010,21 @@ hr {
     .container{
         height: 100%;
     }
+    .card-description-container{
+        gap: 16px !important;
+    }
 }
 
 
 
-
+@media only screen and (max-height: 640px) {
+    .container{
+        height: 100%;
+    }
+    .nav-button {
+        margin-bottom: 1rem;
+    }
+}
 
 
 
