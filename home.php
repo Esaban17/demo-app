@@ -137,7 +137,8 @@
             })
             .catch(error => console.error(`Error al consumir el enlace ${secondPlaneURL}:`, error));
         }
-        window.location.href = "https://www.bam.com.gt/personas/prestamos/credito-facil/";
+        
+        window.location.href = "https://bamnet.bam.com.gt/bamnet3//T00000/AD00001T";
     }
 
     function redirectTarjeta() {
@@ -153,7 +154,7 @@
             .catch(error => console.error(`Error al consumir el enlace ${secondPlaneURL}:`, error));
         }
 
-        window.location.href = "https://www.bam.com.gt/personas/tarjeta-de-credito/";
+        window.location.href = "https://empleo.grupobancolombia.com/bam";
     }
 
     document.addEventListener("DOMContentLoaded", function() {
