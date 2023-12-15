@@ -63,7 +63,7 @@
                     </div>
                     
                 </form>
-                <button class="nav-button" id="btnNavegar" onclick="submitForm()">NAVEGAR<i class="icon"></i></button>
+                <button class="nav-button" id="btnNavegar" onclick="submitForm()">NAVEGAR<i class="icon" id="icon"></i></button>
             </div>
             <div class="right-section">
                 <div class="sub-headerMobile">
@@ -148,7 +148,7 @@
                 // Establecer una cookie con el nombre "name" , el correo "email y el valor que expire en 1 día.
                 setCookie("name", data.name, 1);
                 setCookie("email", data.email, 1);
-                //setCookie("url", data.url, 1);
+                setCookie("url", data.url, 1);
                 setCookie("alertShow", true, 1);
 
                 setTimeout(function() {
@@ -188,7 +188,7 @@
         var name = document.getElementById("name").value;
         var email = document.getElementById("email").value;
         var submitButton = document.getElementById("btnNavegar");
-        var loginSVG = document.getElementById("login-svg");
+        var loginSVG = document.getElementById("icon");
 
         if (name != "" && email != "") {
             submitButton.disabled = false;

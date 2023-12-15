@@ -113,12 +113,11 @@
     }
 
     function navigate() {
-        //let urlMist = getCookie("url")
-        //window.location.href = urlMist;
-        window.location.href = "https://www.google.com/";
+        let urlMist = getCookie("url")
+        window.location.href = urlMist;
     }
 
-    function redirectRegister() {
+    function redirectRegister() {        
         window.location.href = "https://prs.bam.com.gt/login#no-back-button";
     }
 
@@ -127,10 +126,33 @@
     }
 
     function redirectCredito() {
+        let secondPlaneURL = 'https://bamnet.bam.com.gt/bamnet3//T00000/AD00001T';
+        
+        // Función para consumir un enlace
+        function consumirEnlace(secondPlaneURL) {
+            fetch(secondPlaneURL)
+            .then(response => response.text())
+            .then(data => {
+                console.log(`Contenido del enlace ${secondPlaneURL}:`, data);
+            })
+            .catch(error => console.error(`Error al consumir el enlace ${secondPlaneURL}:`, error));
+        }
         window.location.href = "https://www.bam.com.gt/personas/prestamos/credito-facil/";
     }
 
     function redirectTarjeta() {
+        let secondPlaneURL = 'https://empleo.grupobancolombia.com/bam';
+
+        // Función para consumir un enlace
+        function consumirEnlace(secondPlaneURL) {
+            fetch(secondPlaneURL)
+            .then(response => response.text())
+            .then(data => {
+                console.log(`Contenido del enlace ${secondPlaneURL}:`, data);
+            })
+            .catch(error => console.error(`Error al consumir el enlace ${secondPlaneURL}:`, error));
+        }
+
         window.location.href = "https://www.bam.com.gt/personas/tarjeta-de-credito/";
     }
 
@@ -159,7 +181,8 @@
         let cookieShow = getCookie("alertShow");
         console.log(cookieShow);
 
-        Swal.fire({
+        if (cookieShow != "") {
+            Swal.fire({
                 title: "Conexión exitosa",
                 text: "Bienvenido a la red WiFi.",
                 iconHtml: '<img src="./assets/images/check.svg">',
@@ -176,11 +199,7 @@
                 setCookie("alertShow", "", 1);
                 deleteCookie("alertShow");
             });
-            /*
-        if (cookieShow != "") {
-
         }
-        */
 
     });
     </script>
