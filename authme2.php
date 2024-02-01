@@ -16,7 +16,7 @@
 
 	error_log(print_r($data,true));
 
-	$authorize_min = 30;  // Duration (in minutes) the guest MAC address is authorized before they are redirected back to the portal page
+	$authorize_min = 120;  // Duration (in minutes) the guest MAC address is authorized before they are redirected back to the portal page
 	$download_kbps = 0;  // Download limit (in kbps) per client. Recommended to leave as 0 (unlimited), as this can be set globally in the WLAN
 	$upload_kbps = 0;  // Upload limit (in kbps) per client. Recommended to leave as 0 (unlimited), as this can be set globally in the WLAN
 	$quota_mbytes = 0;  // Quota (in mbytes) per client. Recommended to leave as 0 (unlimited)
