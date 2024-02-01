@@ -4,7 +4,7 @@
 	
 	error_log(print_r($data,true));
 
-	$secret = 'OVJKBOtq4UWpPnV0ovuy9U9aqhJWYv7MnDopDSaz';  // WLAN API Key, obtained from the Mist Web GUI after creating the WLAN
+	$secret = 'NRCW7hRTpBnpzhPLhu8oqcUzCdyIFtPzg2u5HikW';  // WLAN API Key, obtained from the Mist Web GUI after creating the WLAN
 	$wlan_id = $data['wlan_id'];
 	$ap_mac = $data['ap_mac'];
 	$client_mac = $data['client_mac'];
