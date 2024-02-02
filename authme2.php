@@ -31,7 +31,7 @@
 	$email = $data['email'];
 
 	$forward = urlencode($url);  // URL the user is forwarded to after authorization
-	$extra = '&forward=' . $forward;
+	#$extra = '&forward=' . $forward;
 	$extra .= '&authorize_only=true';
 	$extra .= '&name=' . urlencode("$name");
 	$extra .= '&email=' . urlencode("$email");
