@@ -9,7 +9,7 @@
 	$ap_mac = $data['ap_mac'];
 	$client_mac = $data['client_mac'];
 
-	$data['url'] = "http://www.google.com";
+	$data['url'] = "https://www.google.com";
 	$url = $data['url'];
 	$ap_name = $data['ap_name'];
 	$site_name = $data['site_name'];
