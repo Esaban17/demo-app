@@ -51,9 +51,9 @@
                     <p style="font-family: 'Open Sans Normal'">Ingresa tus datos</p>
                     
                     <div class="input-wrapper">
-                        <input class="form-control" type="text" id="name" name="name" placeholder="Nombre" autocomplete="off"
+                        <input class="form-control" type="text" id="name" name="name" placeholder="Nombre y Apellido" autocomplete="off"
                         onblur="validateForm()">
-                        <label for="name" class="control-label">Nombre</label>
+                        <label for="name" class="control-label">Nombre Completo</label>
                     </div>
 
                     <div class="input-wrapper">
@@ -63,7 +63,7 @@
                     </div>
                     
                 </form>
-                <button class="nav-button" id="btnNavegar" onclick="submitForm()">SIGUIENTE<i class="icon" id="icon"></i></button>
+                <button class="nav-button" id="btnNavegar" onclick="submitForm()" disabled>SIGUIENTE<i class="icon" id="icon"></i></button>
             </div>
             <div class="right-section">
                 <div class="sub-headerMobile">
@@ -166,15 +166,6 @@
                     popup: 'loaderModalContainer',
                 }
                 })
-                
-
-                /*
-                var iframe = document.getElementById("miIframe");
-                iframe.src = data.url;
-                setTimeout(function () {
-                    window.location.href = "https://gruporamle.com/portal/home.php";
-                }, 3000); //redireccionar después de 4 segundos
-                */
             })
             .catch(error => console.log(error));      
         } catch(error) {
@@ -185,25 +176,71 @@
 
 
     function validateForm() {
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
+        var name = document.getElementById("name").value.trim();
+        var email = document.getElementById("email").value.trim();
         var submitButton = document.getElementById("btnNavegar");
         var loginSVG = document.getElementById("icon");
 
-        if (name != "" && email != "") {
+        // Lista de correos electrónicos inválidos
+        var invalidEmails = [
+            "hola@hola.com",
+            "hola@gmail.com",
+            "demo@demo.com",
+            "demo@prueba.com",
+            "demo@gmail.com",
+            "prueba@gmail.com",
+            "prueba@prueba.com",
+            "ejemplo123@gmail.com",
+            "ejemplo1234@gmail.com",
+            "ejemplo@gmail.com",
+            "usuario@gmail.com",
+            "test@test.com",
+            "usuario@usuario.com",
+            "bac@bac.com"
+        ];
+
+        // Lista de nombres y apellidos inválidos
+        var invalidNames = [
+            "hola hola",
+            "prueba prueba",
+            "test test",
+            "ejemplo ejemplo",
+            "demo demo"
+        ];
+
+        // Expresión regular para validar nombre y apellido
+        var nameRegex = /^[A-Za-z]{2,}\s[A-Za-z]{2,}$/;
+
+        // Expresión regular para validar formato de correo electrónico
+        var emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+
+        // Validación de nombre y apellido
+        if (!name.match(nameRegex) || invalidNames.includes(name.toLowerCase())) {
+            return false;
+        }
+
+        // Validación de correo electrónico común
+        if (invalidEmails.includes(email)) {
+            return false;
+        }
+
+        if (!email.match(emailRegex)) {
+            return false;
+        }
+
+        if (name !== "" && email !== "") {
             submitButton.disabled = false;
             submitButton.style.cursor = "pointer";
             submitButton.style.backgroundColor = "#FDDA24";
             submitButton.style.color = "#2C2A29";
             loginSVG.style.fill = "#2C2A29";
-
+            document.getElementById("btnNavegar").removeAttribute("disabled");
             return true;
         } else {
             submitButton.disabled = true;
             submitButton.style.cursor = "default";
             submitButton.style.backgroundColor = "#CCCCCC";
             submitButton.style.color = "#6d6c6b";
-
             return false;
         }
     }
