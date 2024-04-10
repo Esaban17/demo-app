@@ -63,7 +63,7 @@
                     </div>
                     
                 </form>
-                <button class="nav-button" id="btnNavegar" onclick="submitForm()">NAVEGAR<i class="icon" id="icon"></i></button>
+                <button class="nav-button" id="btnNavegar" onclick="submitForm()">SIGUIENTE<i class="icon" id="icon"></i></button>
             </div>
             <div class="right-section">
                 <div class="sub-headerMobile">

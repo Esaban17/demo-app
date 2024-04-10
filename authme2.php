@@ -31,8 +31,8 @@
 	$email = $data['email'];
 
 	$forward = urlencode($url);  // URL the user is forwarded to after authorization
-	#$extra = '&forward=' . $forward;
-	$extra .= '&authorize_only=true';
+	$extra = '&forward=' . $forward;
+	$extra .= '&authorize_only=false';
 	$extra .= '&name=' . urlencode("$name");
 	$extra .= '&email=' . urlencode("$email");
 	$expires = time() + 10050;  // The time until which the authorization URL is valid
