@@ -209,8 +209,7 @@
         ];
 
         // Expresión regular para validar nombre y apellido
-        var nameRegex = /^[A-Za-z]{2,}\s[A-Za-z]{2,}$|^[A-Za-z]{2,}\s[A-Za-z]{2,}\s[A-Za-z]{2,}$/;
-
+        var nameRegex = /^[A-Za-z]{2,}\s[A-Za-z]{2,}$|^[A-Za-z]{2,}\s[A-Za-z]{2,}\s[A-Za-z]{2,}\s[A-Za-z]{2,}$/;
         // Expresión regular para validar formato de correo electrónico
         var emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
 
